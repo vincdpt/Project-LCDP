@@ -1,0 +1,10 @@
+F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\bin\Debug\PpeGSBTeam27.exe.config
+F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\bin\Debug\PpeGSBTeam27.exe
+F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\bin\Debug\PpeGSBTeam27.pdb
+F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.Properties.Resources.resources
+F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.csproj.GenerateResource.Cache
+F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.exe
+F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.pdb
+F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.FormConnection.resources
+F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.BackOfficeGSB.resources
+F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.csprojResolveAssemblyReference.cache
