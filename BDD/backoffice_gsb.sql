@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mar 29 Novembre 2016 à 15:19
+-- Généré le :  Mar 29 Novembre 2016 à 15:50
 -- Version du serveur :  5.7.11
 -- Version de PHP :  5.6.18
 
@@ -30,6 +30,20 @@ CREATE TABLE `famille` (
   `id_famille` int(5) NOT NULL,
   `famille_produit` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `famille`
+--
+
+INSERT INTO `famille` (`id_famille`, `famille_produit`) VALUES
+(1, 'Analgésiques'),
+(2, 'Antibiotiques'),
+(3, 'Antalgiques'),
+(4, 'Anti-inflammatoires'),
+(5, 'Antidépresseurs'),
+(6, 'Antihistaminiques'),
+(7, 'Allergènes'),
+(8, 'Antitussifs');
 
 -- --------------------------------------------------------
 
@@ -224,7 +238,7 @@ ALTER TABLE `visiteur`
 -- AUTO_INCREMENT pour la table `famille`
 --
 ALTER TABLE `famille`
-  MODIFY `id_famille` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_famille` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT pour la table `gestionnaire`
 --
