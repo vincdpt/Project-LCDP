@@ -1,5 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-class Produit
+namespace PpeGSBTeam27
+{
+    class Produit
     {
         int num;
         String nom;
@@ -23,7 +30,7 @@ class Produit
             famille = ;
             prixHT = unPrixHT;
             prixEchantillon = unPrixEch;
-            interaction=uneInteraction;
+            interaction = uneInteraction;
         }
 
         #region Getters et Setters
@@ -121,4 +128,4 @@ class Produit
         #endregion
 
     }
-       
+}

@@ -56,7 +56,23 @@
             this.labProduitsCreerNom = new System.Windows.Forms.Label();
             this.labProduitsCreerNum = new System.Windows.Forms.Label();
             this.tabProduitsModifier = new System.Windows.Forms.TabPage();
+<<<<<<< HEAD
             this.gbxProduitsModif = new System.Windows.Forms.GroupBox();
+=======
+            this.tabProduitsSupprimer = new System.Windows.Forms.TabPage();
+            this.tabClients = new System.Windows.Forms.TabPage();
+            this.tabVisiteurs = new System.Windows.Forms.TabPage();
+<<<<<<< HEAD
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+=======
+            this.labProduitsModifChercherLab = new System.Windows.Forms.Label();
+            this.txbProduitsModifChercherNom = new System.Windows.Forms.TextBox();
+            this.labProduitsModifChercherNum = new System.Windows.Forms.Label();
+            this.txbProduitsModifChercherNumero = new System.Windows.Forms.TextBox();
+            this.btnProduitsModifValider = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+>>>>>>> d63b003de475c145f305c3fadf6aa44f0566176d
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -77,6 +93,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.label1 = new System.Windows.Forms.Label();
             this.btnProduitsModifValiderRecherche = new System.Windows.Forms.Button();
             this.txbProduitsModifChercherNumero = new System.Windows.Forms.TextBox();
@@ -111,17 +128,28 @@
             this.txbClientsCreerNom = new System.Windows.Forms.TextBox();
             this.txbClientsCreerRaisonSociale = new System.Windows.Forms.TextBox();
             this.txbClientsCreerAdresse = new System.Windows.Forms.TextBox();
+=======
+>>>>>>> origin/master
+>>>>>>> d63b003de475c145f305c3fadf6aa44f0566176d
             this.tabGestionGSB.SuspendLayout();
             this.tabProduits.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduits)).BeginInit();
             this.tabProduitsGestion.SuspendLayout();
             this.tabProduitsCreer.SuspendLayout();
+<<<<<<< HEAD
+            this.tabVisiteurs.SuspendLayout();
+=======
             this.tabProduitsModifier.SuspendLayout();
+<<<<<<< HEAD
             this.gbxProduitsModif.SuspendLayout();
             this.tabProduitsSupprimer.SuspendLayout();
             this.tabClients.SuspendLayout();
             this.tabClientsGestion.SuspendLayout();
             this.tabClientsCreer.SuspendLayout();
+=======
+            this.groupBox1.SuspendLayout();
+>>>>>>> origin/master
+>>>>>>> d63b003de475c145f305c3fadf6aa44f0566176d
             this.SuspendLayout();
             // 
             // tabGestionGSB
@@ -412,12 +440,20 @@
             // 
             // tabProduitsModifier
             // 
+<<<<<<< HEAD
             this.tabProduitsModifier.Controls.Add(this.gbxProduitsModif);
             this.tabProduitsModifier.Controls.Add(this.btnProduitsModifValiderRecherche);
+=======
+<<<<<<< HEAD
+=======
+            this.tabProduitsModifier.Controls.Add(this.groupBox1);
+            this.tabProduitsModifier.Controls.Add(this.btnProduitsModifValider);
+>>>>>>> d63b003de475c145f305c3fadf6aa44f0566176d
             this.tabProduitsModifier.Controls.Add(this.txbProduitsModifChercherNumero);
             this.tabProduitsModifier.Controls.Add(this.labProduitsModifChercherNum);
             this.tabProduitsModifier.Controls.Add(this.txbProduitsModifChercherNom);
             this.tabProduitsModifier.Controls.Add(this.labProduitsModifChercherLab);
+>>>>>>> origin/master
             this.tabProduitsModifier.Location = new System.Drawing.Point(4, 22);
             this.tabProduitsModifier.Name = "tabProduitsModifier";
             this.tabProduitsModifier.Padding = new System.Windows.Forms.Padding(3);
@@ -426,6 +462,7 @@
             this.tabProduitsModifier.Text = "Modifier";
             this.tabProduitsModifier.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
             // gbxProduitsModif
             // 
             this.gbxProduitsModif.Controls.Add(this.btnProduitsModifValiderLaModif);
@@ -456,6 +493,133 @@
             this.gbxProduitsModif.TabIndex = 5;
             this.gbxProduitsModif.TabStop = false;
             this.gbxProduitsModif.Text = "groupBox1";
+=======
+            // tabProduitsSupprimer
+            // 
+            this.tabProduitsSupprimer.Location = new System.Drawing.Point(4, 22);
+            this.tabProduitsSupprimer.Name = "tabProduitsSupprimer";
+            this.tabProduitsSupprimer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabProduitsSupprimer.Size = new System.Drawing.Size(431, 514);
+            this.tabProduitsSupprimer.TabIndex = 2;
+            this.tabProduitsSupprimer.Text = "Supprimer";
+            this.tabProduitsSupprimer.UseVisualStyleBackColor = true;
+            // 
+            // tabClients
+            // 
+            this.tabClients.Location = new System.Drawing.Point(4, 22);
+            this.tabClients.Name = "tabClients";
+            this.tabClients.Padding = new System.Windows.Forms.Padding(3);
+            this.tabClients.Size = new System.Drawing.Size(1427, 845);
+            this.tabClients.TabIndex = 1;
+            this.tabClients.Text = "Clients";
+            this.tabClients.UseVisualStyleBackColor = true;
+            // 
+            // tabVisiteurs
+            // 
+<<<<<<< HEAD
+            this.tabVisiteurs.Controls.Add(this.checkBox1);
+=======
+>>>>>>> origin/master
+            this.tabVisiteurs.Location = new System.Drawing.Point(4, 22);
+            this.tabVisiteurs.Name = "tabVisiteurs";
+            this.tabVisiteurs.Padding = new System.Windows.Forms.Padding(3);
+            this.tabVisiteurs.Size = new System.Drawing.Size(1427, 845);
+            this.tabVisiteurs.TabIndex = 2;
+            this.tabVisiteurs.Text = "Visiteurs";
+            this.tabVisiteurs.UseVisualStyleBackColor = true;
+            // 
+<<<<<<< HEAD
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(230, 177);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+=======
+            // labProduitsModifChercherLab
+            // 
+            this.labProduitsModifChercherLab.AutoSize = true;
+            this.labProduitsModifChercherLab.Location = new System.Drawing.Point(149, 26);
+            this.labProduitsModifChercherLab.Name = "labProduitsModifChercherLab";
+            this.labProduitsModifChercherLab.Size = new System.Drawing.Size(107, 13);
+            this.labProduitsModifChercherLab.TabIndex = 0;
+            this.labProduitsModifChercherLab.Text = "Recherche par nom :";
+            // 
+            // txbProduitsModifChercherNom
+            // 
+            this.txbProduitsModifChercherNom.Location = new System.Drawing.Point(124, 42);
+            this.txbProduitsModifChercherNom.Name = "txbProduitsModifChercherNom";
+            this.txbProduitsModifChercherNom.Size = new System.Drawing.Size(147, 20);
+            this.txbProduitsModifChercherNom.TabIndex = 1;
+            // 
+            // labProduitsModifChercherNum
+            // 
+            this.labProduitsModifChercherNum.AutoSize = true;
+            this.labProduitsModifChercherNum.Location = new System.Drawing.Point(134, 65);
+            this.labProduitsModifChercherNum.Name = "labProduitsModifChercherNum";
+            this.labProduitsModifChercherNum.Size = new System.Drawing.Size(122, 13);
+            this.labProduitsModifChercherNum.TabIndex = 2;
+            this.labProduitsModifChercherNum.Text = "Recherche par numéro :";
+            // 
+            // txbProduitsModifChercherNumero
+            // 
+            this.txbProduitsModifChercherNumero.Location = new System.Drawing.Point(124, 81);
+            this.txbProduitsModifChercherNumero.Name = "txbProduitsModifChercherNumero";
+            this.txbProduitsModifChercherNumero.Size = new System.Drawing.Size(147, 20);
+            this.txbProduitsModifChercherNumero.TabIndex = 3;
+            // 
+            // btnProduitsModifValider
+            // 
+            this.btnProduitsModifValider.Location = new System.Drawing.Point(297, 53);
+            this.btnProduitsModifValider.Name = "btnProduitsModifValider";
+            this.btnProduitsModifValider.Size = new System.Drawing.Size(90, 36);
+            this.btnProduitsModifValider.TabIndex = 4;
+            this.btnProduitsModifValider.Text = "Valider";
+            this.btnProduitsModifValider.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(6, 136);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(419, 372);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(49, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(314, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Il faudra y mettre en invisible plus tard";
+>>>>>>> d63b003de475c145f305c3fadf6aa44f0566176d
             // 
             // textBox2
             // 
@@ -639,6 +803,7 @@
             this.label11.Size = new System.Drawing.Size(124, 16);
             this.label11.TabIndex = 22;
             this.label11.Text = "Numéro du produit :";
+>>>>>>> origin/master
             // 
             // label1
             // 
@@ -930,8 +1095,13 @@
             this.tabProduitsGestion.ResumeLayout(false);
             this.tabProduitsCreer.ResumeLayout(false);
             this.tabProduitsCreer.PerformLayout();
+<<<<<<< HEAD
+            this.tabVisiteurs.ResumeLayout(false);
+            this.tabVisiteurs.PerformLayout();
+=======
             this.tabProduitsModifier.ResumeLayout(false);
             this.tabProduitsModifier.PerformLayout();
+<<<<<<< HEAD
             this.gbxProduitsModif.ResumeLayout(false);
             this.gbxProduitsModif.PerformLayout();
             this.tabProduitsSupprimer.ResumeLayout(false);
@@ -940,6 +1110,11 @@
             this.tabClientsGestion.ResumeLayout(false);
             this.tabClientsCreer.ResumeLayout(false);
             this.tabClientsCreer.PerformLayout();
+=======
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+>>>>>>> origin/master
+>>>>>>> d63b003de475c145f305c3fadf6aa44f0566176d
             this.ResumeLayout(false);
 
         }
@@ -976,7 +1151,14 @@
         private System.Windows.Forms.Label labProduitsCreerEffets;
         private System.Windows.Forms.Label labProduitsCreerNom;
         private System.Windows.Forms.Label labProduitsCreerNum;
+<<<<<<< HEAD
         private System.Windows.Forms.GroupBox gbxProduitsModif;
+=======
+<<<<<<< HEAD
+        private System.Windows.Forms.CheckBox checkBox1;
+=======
+        private System.Windows.Forms.GroupBox groupBox1;
+>>>>>>> d63b003de475c145f305c3fadf6aa44f0566176d
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -1003,6 +1185,7 @@
         private System.Windows.Forms.Label labProduitsModifChercherNum;
         private System.Windows.Forms.TextBox txbProduitsModifChercherNom;
         private System.Windows.Forms.Label labProduitsModifChercherLab;
+<<<<<<< HEAD
         private System.Windows.Forms.Button btnProduitsSupprimerValider;
         private System.Windows.Forms.TextBox txbProduitsSupprimerChercherNum;
         private System.Windows.Forms.Label labProduitsSupprimerChercherNum;
@@ -1029,5 +1212,8 @@
         private System.Windows.Forms.TextBox txbClientsCreerRaisonSociale;
         private System.Windows.Forms.TextBox txbClientsCreerNom;
         private System.Windows.Forms.TextBox txbClientsCreerCode;
+=======
+>>>>>>> origin/master
+>>>>>>> d63b003de475c145f305c3fadf6aa44f0566176d
     }
 }
