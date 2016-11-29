@@ -8,3 +8,13 @@ F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.pdb
 F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.FormConnection.resources
 F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.BackOfficeGSB.resources
 F:\ICOF\SIO2\PPE GSB\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.csprojResolveAssemblyReference.cache
+Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\bin\Debug\PpeGSBTeam27.exe.config
+Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.exe
+Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.pdb
+Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\bin\Debug\PpeGSBTeam27.exe
+Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\bin\Debug\PpeGSBTeam27.pdb
+Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.csprojResolveAssemblyReference.cache
+Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.BackOfficeGSB.resources
+Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.FormConnection.resources
+Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.Properties.Resources.resources
+Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.csproj.GenerateResource.Cache
