@@ -19,6 +19,7 @@ namespace PpeGSBTeam27
 
         private void btnSeConnecterValider_Click(object sender, EventArgs e)
         {
+            DAOFactory.connexion();
             BackOfficeGSB frm = new BackOfficeGSB();
             this.Visible = false;
             frm.Show();

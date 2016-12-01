@@ -21,5 +21,10 @@ namespace PpeGSBTeam27
         {
 
         }
+
+        private void dgvProduits_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

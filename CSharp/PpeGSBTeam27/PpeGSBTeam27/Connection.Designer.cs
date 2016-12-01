@@ -98,6 +98,7 @@
             this.Controls.Add(this.labSeConnecterMdp);
             this.Controls.Add(this.labSeConnecterPseudo);
             this.Controls.Add(this.txbSeConnecterMdp);
+            this.MinimizeBox = false;
             this.Name = "FormConnection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Connection";
