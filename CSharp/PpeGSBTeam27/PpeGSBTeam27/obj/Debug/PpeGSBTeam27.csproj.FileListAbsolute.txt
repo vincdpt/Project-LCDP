@@ -18,3 +18,6 @@ Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.BackOfficeGSB.r
 Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.FormConnection.resources
 Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.Properties.Resources.resources
 Y:\Project-LCDP\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.csproj.GenerateResource.Cache
+Y:\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\bin\Debug\PpeGSBTeam27.exe.config
+Y:\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.exe
+Y:\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.pdb
