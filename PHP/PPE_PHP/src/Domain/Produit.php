@@ -119,12 +119,45 @@ class Produit
         $this->contre_indication = $contre_indication;
     }
 
+    // interactions_autres_produits
+    public function getInteractionsAutresProduits() {
+        return $this->interactions_autres_produits;
+    }
 
+    public function setInteractionsAutresProduits($interactions_autres_produits) {
+        $this->interactions_autres_produits = $interactions_autres_produits;
+    }
 
-    private $contre_indication;
-private $interactions_autres_produits;
-private $presentation;
-private $dosage;
-private $prix_HT;
-$prix_Echantillon;
+    // presentation
+    public function getPresentation() {
+        return $this->presentation;
+    }
+
+    public function setPresentation($presentation) {
+        $this->presentation = $presentation;
+    }
+
+    // dosage
+    public function getDosage() {
+        return $this->dosage;
+    }
+    public function setDosage($dosage) {
+        $this->dosage = $dosage;
+    }
+
+    // prix_HT
+    public function getPrixHT() {
+        return $this->prix_HT;
+    }
+    public function setPrixHT($prix_HT) {
+        $this->prix_HT = $prix_HT;
+    }
+
+    // prix_Echantillon
+    public function getPrixEchantillon() {
+        return $this->prix_Echantillon;
+    }
+    public function setPrixEchantillon($prix_Echantillon) {
+        $this->prix_Echantillon = $prix_Echantillon;
+    }
 }
