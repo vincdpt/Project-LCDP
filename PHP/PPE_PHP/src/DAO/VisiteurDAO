@@ -1,9 +1,0 @@
-<?php
-
-namespace MicroCMS\DAO;
-
-use MicroCMS\Domain\Visiteur;
-
-class VisiteurDAO extends DAO
-{
-}

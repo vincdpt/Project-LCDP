@@ -180,5 +180,5 @@ class Visiteur
     public function setPrivileges($Privileges) {
         $this->Privileges = $Privileges;
     }
-    
+
 }
