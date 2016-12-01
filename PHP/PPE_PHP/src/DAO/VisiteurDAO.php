@@ -7,9 +7,9 @@ use PPE_PHP\Domain\Article;
 class VisiteurDAO extends DAO
 {
     /**
-     * Return a list of all articles, sorted by date (most recent first).
+     * Return a list of all vendeurs, sorted by cp.
      *
-     * @return array A list of all articles.
+     * @return array A list of all vendeurs.
      */
     public function findAll() {
         $sql = "select * from visiteur order by cp";
@@ -18,28 +18,30 @@ class VisiteurDAO extends DAO
         // Convert query result to an array of domain objects
         $visiteurs = array();
         foreach ($result as $row) {
-            $articleId = $row['art_id'];
-            $articles[$articleId] = $this->buildDomainObject($row);
+            $id_visiteur = $row['id_visiteur'];
+            $visiteurs[$id_visiteur] = $this->buildDomainObject($row);
         }
-        return $articles;
+        return $vendeurs;
     }
 
     /**
-     * Returns an article matching the supplied id.
+     * Returns an vendeurs matching the supplied id.
      *
-     * @param integer $id The article id.
+     * @param integer $id The vendeur id.
      *
-     * @return \MicroCMS\Domain\Article|throws an exception if no matching article is found
+     * @return \PPE_PHP\Domain\Article|throws an exception if no matching vendeur is found
      */
-    public function find($id) {
-        $sql = "select * from t_article where art_id=?";
+    public function find($id_visiteur) {
+        $sql = "select * from visiteur where id_visiteur=?";
         $row = $this->getDb()->fetchAssoc($sql, array($id));
 
         if ($row)
             return $this->buildDomainObject($row);
         else
-            throw new \Exception("No article matching id " . $id);
+            throw new \Exception("No vendeur matching id " . $id_visiteur);
     }
+
+    //A REPRENDRE LA PROCHAIN COUR
 
     /**
      * Saves an article into the database.
