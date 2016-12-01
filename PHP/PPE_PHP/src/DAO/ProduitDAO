@@ -1,0 +1,9 @@
+<?php
+
+namespace MicroCMS\DAO;
+
+use MicroCMS\Domain\Produit;
+
+class ProduitDAO extends DAO
+{
+}
