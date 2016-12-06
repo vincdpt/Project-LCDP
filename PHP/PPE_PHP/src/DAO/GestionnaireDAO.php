@@ -22,27 +22,27 @@ class GestionnaireDAO extends DAO
         // Convert query result to an array of domain objects
         $gestionnaire = array();
         foreach ($result as $row) {
-            $id_gestionnaire = $row['id_gestionnaire'];
-            $gestionnaire[$id_gestionnaire] = $this->buildDomainObject($row);
+            $login = $row['login'];
+            $gestionnaire[$login] = $this->buildDomainObject($row);
         }
         return $gestionnaire;
     }
 
     /**
-     * Returns an gestionnaire matching the supplied id.
+     * Returns an gestionnaire matching the supplied login.
      *
-     * @param integer $id The gestionnaire id.
+     * @param integer $login The gestionnaire login.
      *
      * @return \MicroCMS\Domain\Gestionnaire|throws an exception if no matching gestionnaire is found
      */
-    public function find($id_gestionnaire) {
-        $sql = "select * from gestionnaire where id_gestionnaire=?";
-        $row = $this->getDb()->fetchAssoc($sql, array($id_gestionnaire));
+    public function find($login) {
+        $sql = "select * from gestionnaire where login=?";
+        $row = $this->getDb()->fetchAssoc($sql, array($login));
 
         if ($row)
             return $this->buildDomainObject($row);
         else
-            throw new \Exception("No gestionnaire matching id " . $id_gestionnaire);
+            throw new \Exception("No gestionnaire matching login " . $login);
     }
 
     /**
@@ -52,31 +52,30 @@ class GestionnaireDAO extends DAO
      */
     public function save(Gestionnaire $gestionnaire) {
         $gestionnaireData = array(
-            'id_gestionnaire' => $gestionnaire->getIdGestionnaire(),
             'login' => $gestionnaire->getLoginGestionnaire(),
             'mdp' => $gestionnaire->getMdpGestionnaire(),
             );
 
-        if ($gestionnaire->getIdGestionnaire()) {
+        if ($gestionnaire->getLoginGestionnaire()) {
             // The gestionnaire has already been saved : update it
-            $this->getDb()->update('gestionnaire', $gestionnaireData, array('id_gestionnaire' => $gestionnaire->getIdGestionnaire()));
+            $this->getDb()->update('gestionnaire', $gestionnaireData, array('login' => $gestionnaire->getLoginGestionnaire()));
         } else {
             // The gestionnaire has never been saved : insert it
             $this->getDb()->insert('gestionnaire', $gestionnaireData);
-            // Get the id of the newly created gestionnaire and set it on the entity.
-            $id_gestionnaire = $this->getDb()->lastInsertId();
-            $gestionnaire->setIdGestionnaire($id_gestionnaire);
+            // Get the login of the newly created gestionnaire and set it on the entity.
+            $login = $this->getDb()->lastInsertId();
+            $gestionnaire->setLoginGestionnaire($login);
         }
     }
 
     /**
      * Removes an gestionnaire from the database.
      *
-     * @param integer $id_gestionnaire The gestionnaire id.
+     * @param integer $login The gestionnaire login.
      */
-    public function delete($id_gestionnaire) {
+    public function delete($login) {
         // Delete the gestionnaire
-        $this->getDb()->delete('gestionnaire', array('id_gestionnaire' => $id_gestionnaire));
+        $this->getDb()->delete('gestionnaire', array('login' => $login));
     }
 
     public function loadUserByUsername($login)
@@ -118,7 +117,6 @@ class GestionnaireDAO extends DAO
      */
     protected function buildDomainObject($row) {
         $gestionnaire = new Gestionnaire();
-        $gestionnaire->setIdGestionnaire($row['id_gestionnaire']);
         $gestionnaire->setLoginGestionnaire($row['login']);
         $gestionnaire->SetMdpGestionnaire($row['mdp']);
         return $gestionnaire;

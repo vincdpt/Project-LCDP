@@ -6,12 +6,6 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 class Gestionnaire
 {
-    /**
-     * Gestionnaire id_gestionnaire.
-     *
-     * @var integer
-     */
-    private $id_gestionnaire;
 
     /**
      * Gestionnaire login.
@@ -27,15 +21,6 @@ class Gestionnaire
      */
     private $mdp;
 
-
-    // id_gestionnaire
-    public function getIdGestionnaire() {
-        return $this->id_gestionnaire;
-    }
-
-    public function setIdGestionnaire($id_gestionnaire) {
-        $this->id_gestionnaire = $id_gestionnaire;
-    }
 
     // login
     public function getLoginGestionnaire() {
