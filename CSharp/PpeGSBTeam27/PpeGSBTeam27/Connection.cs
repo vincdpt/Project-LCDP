@@ -17,12 +17,29 @@ namespace PpeGSBTeam27
             InitializeComponent();
         }
 
+        #region Variables globales
+        public static string login;
+        public static string mdp;
+        #endregion
+
+
         private void btnSeConnecterValider_Click(object sender, EventArgs e)
         {
-            DAOFactory.connexion();
-            BackOfficeGSB frm = new BackOfficeGSB();
-            this.Visible = false;
-            frm.Show();
+            login = txbSeConnecterLogin.Text.ToString();
+            mdp = txbSeConnecterMdp.Text.ToString();
+
+            if (DAOConnection.verifLoginMdp())
+            {
+                BackOfficeGSB frm = new BackOfficeGSB();
+                this.Visible = false;
+                frm.Show();
+            }
+
+            else
+            {
+                MessageBox.Show("Erreur - Login ou mot de passe incorrect");
+            }
+            
         }
     }
 }

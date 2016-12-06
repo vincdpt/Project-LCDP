@@ -60,6 +60,7 @@
             this.txbSeConnecterMdp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txbSeConnecterMdp.Location = new System.Drawing.Point(1076, 580);
             this.txbSeConnecterMdp.Name = "txbSeConnecterMdp";
+            this.txbSeConnecterMdp.PasswordChar = '*';
             this.txbSeConnecterMdp.Size = new System.Drawing.Size(158, 20);
             this.txbSeConnecterMdp.TabIndex = 8;
             // 
