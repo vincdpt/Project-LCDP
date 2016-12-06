@@ -93,7 +93,7 @@ class PraticienDAO extends DAO
         $praticien->setIdPraticien($row['id_praticien']);
         $praticien->setIdSpecialite($row['id_specialite']);
         $praticien->setRaisonSociale($row['raison_sociale']);
-        $praticien->setAdresse($row['setAdresse']);
+        $praticien->setAdresse($row['adresse']);
         $praticien->setTelephone($row['telephone']);
         $praticien->setNom($row['nom']);
         $praticien->setMail($row['mail']);
