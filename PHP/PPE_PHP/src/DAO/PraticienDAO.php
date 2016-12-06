@@ -7,9 +7,9 @@ use PPE_PHP\Domain\Praticien;
 class PraticienDAO extends DAO
 {
     /**
-     * Return a list of all articles, sorted by date (most recent first).
+     * Return a list of all praticien, sorted by date (most recent first).
      *
-     * @return array A list of all articles.
+     * @return array A list of all praticien.
      */
     public function findAll() {
         $sql = "select * from praticien";
@@ -25,66 +25,81 @@ class PraticienDAO extends DAO
     }
 
     /**
-     * Returns an article matching the supplied id.
+     * Returns an praticien matching the supplied id.
      *
-     * @param integer $id The article id.
+     * @param integer $id The praticien id.
      *
-     * @return \MicroCMS\Domain\Article|throws an exception if no matching article is found
+     * @return \MicroCMS\Domain\Praticien|throws an exception if no matching praticien is found
      */
-    public function find($id) {
-        $sql = "select * from t_article where art_id=?";
-        $row = $this->getDb()->fetchAssoc($sql, array($id));
+    public function find($id_praticien) {
+        $sql = "select * from praticien where id_praticien=?";
+        $row = $this->getDb()->fetchAssoc($sql, array($id_praticien));
 
         if ($row)
             return $this->buildDomainObject($row);
         else
-            throw new \Exception("No article matching id " . $id);
+            throw new \Exception("No praticien matching id " . $id_praticien);
     }
 
     /**
-     * Saves an article into the database.
+     * Saves an praticien into the database.
      *
-     * @param \MicroCMS\Domain\Article $article The article to save
+     * @param \MicroCMS\Domain\Praticien $praticien The praticien to save
      */
-    public function save(Article $article) {
-        $articleData = array(
-            'art_title' => $article->getTitle(),
-            'art_content' => $article->getContent(),
+    public function save(Praticien $praticien) {
+        $praticienData = array(
+            'id_praticien' => $praticien->getIdPraticien(),
+            'id_specialite' => $praticien->getIdSpecialite(),
+            'raison_sociale' => $praticien->getRaisonSociale(),
+            'adresse' => $praticien->getAdresse(),
+            'telephone' => $praticien->getTelephone(),
+            'nom' => $praticien->getNom(),
+            'mail' => $praticien->getMail(),
+            'coeff_notoriete' => $praticien->getCoeff_notoriete(),
+            'coeff_confiance' => $praticien->getCoeff_confiance(),
+            'type' => $praticien->getType(),
             );
 
-        if ($article->getId()) {
-            // The article has already been saved : update it
-            $this->getDb()->update('t_article', $articleData, array('art_id' => $article->getId()));
+        if ($praticien->getIdPraticien()) {
+            // The praticien has already been saved : update it
+            $this->getDb()->update('praticien', $praticienData, array('id_praticien' => $praticien->getIdPraticien()));
         } else {
-            // The article has never been saved : insert it
-            $this->getDb()->insert('t_article', $articleData);
-            // Get the id of the newly created article and set it on the entity.
-            $id = $this->getDb()->lastInsertId();
-            $article->setId($id);
+            // The praticien has never been saved : insert it
+            $this->getDb()->insert('praticien', $praticienData);
+            // Get the id of the newly created praticien and set it on the entity.
+            $id_praticien = $this->getDb()->lastInsertId();
+            $praticien->setId($id_praticien);
         }
     }
 
     /**
-     * Removes an article from the database.
+     * Removes an praticien from the database.
      *
-     * @param integer $id The article id.
+     * @param integer $id_praticien The praticien id.
      */
-    public function delete($id) {
-        // Delete the article
-        $this->getDb()->delete('t_article', array('art_id' => $id));
+    public function delete($id_praticien) {
+        // Delete the praticien
+        $this->getDb()->delete('praticien', array('id_praticien' => $id_praticien));
     }
 
     /**
-     * Creates an Article object based on a DB row.
+     * Creates an praticien object based on a DB row.
      *
-     * @param array $row The DB row containing Article data.
-     * @return \MicroCMS\Domain\Article
+     * @param array $row The DB row containing Praticien data.
+     * @return \MicroCMS\Domain\Praticien
      */
     protected function buildDomainObject($row) {
-        $article = new Article();
-        $article->setId($row['art_id']);
-        $article->setTitle($row['art_title']);
-        $article->setContent($row['art_content']);
-        return $article;
+        $praticien = new Praticien();
+        $praticien->setIdPraticien($row['id_praticien']);
+        $praticien->setIdSpecialite($row['id_specialite']);
+        $praticien->setRaisonSociale($row['raison_sociale']);
+        $praticien->setAdresse($row['setAdresse']);
+        $praticien->setTelephone($row['telephone']);
+        $praticien->setNom($row['nom']);
+        $praticien->setMail($row['mail']);
+        $praticien->setCoeff_notoriete($row['coeff_notoriete']);
+        $praticien->setCoeff_confiance($row['coeff_confiance']);
+        $praticien->setType($row['type']);
+        return $praticien;
     }
 }

@@ -2,14 +2,14 @@
 
 namespace PPE_PHP\DAO;
 
-use PPE_PHP\Domain\Article;
+use PPE_PHP\Domain\Visiteur;
 
 class VisiteurDAO extends DAO
 {
     /**
      * Return a list of all vendeurs, sorted by cp.
      *
-     * @return array A list of all vendeurs.
+     * @return array A list of all visiteurs.
      */
     public function findAll() {
         $sql = "select * from visiteur order by cp";
@@ -21,15 +21,15 @@ class VisiteurDAO extends DAO
             $id_visiteur = $row['id_visiteur'];
             $visiteurs[$id_visiteur] = $this->buildDomainObject($row);
         }
-        return $vendeurs;
+        return $visiteurs;
     }
 
     /**
-     * Returns an vendeurs matching the supplied id.
+     * Returns an visiteur matching the supplied id.
      *
-     * @param integer $id The vendeur id.
+     * @param integer $id The visiteur id.
      *
-     * @return \PPE_PHP\Domain\Article|throws an exception if no matching vendeur is found
+     * @return \PPE_PHP\Domain\Visiteur|throws an exception if no matching visiteur is found
      */
     public function find($id_visiteur) {
         $sql = "select * from visiteur where id_visiteur=?";
@@ -38,55 +38,71 @@ class VisiteurDAO extends DAO
         if ($row)
             return $this->buildDomainObject($row);
         else
-            throw new \Exception("No vendeur matching id " . $id_visiteur);
+            throw new \Exception("No visiteur matching id " . $id_visiteur);
     }
 
-    //A REPRENDRE LA PROCHAIN COUR
 
     /**
-     * Saves an article into the database.
+     * Saves an visiteur into the database.
      *
-     * @param \MicroCMS\Domain\Article $article The article to save
+     * @param \MicroCMS\Domain\Visiteur $visiteur The visiteur to save
      */
-    public function save(Article $article) {
-        $articleData = array(
-            'art_title' => $article->getTitle(),
-            'art_content' => $article->getContent(),
+    public function save(Visiteur $visiteur) {
+        $visiteurData = array(
+            'id_visiteur' => $visiteur->getIdVisiteur(),
+            'id_secteur' => $visiteur->getIdSecteur(),
+            'nom' => $visiteur->getNom(),
+            'prenom' => $visiteur->getPrenom(),
+            'login' => $visiteur->getLogin(),
+            'mdp' => $visiteur->getMdp(),
+            'adresse' => $visiteur->getAdresse(),
+            'cp' => $visiteur->getCp(),
+            'ville' => $visiteur->getVille(),
+            'dateEmbauche' => $visiteur->getDateEmbauche(),
+            'Privileges' => $visiteur->getPrivileges(),
             );
 
-        if ($article->getId()) {
-            // The article has already been saved : update it
-            $this->getDb()->update('t_article', $articleData, array('art_id' => $article->getId()));
+        if ($visiteur->getIdVisiteur()) {
+            // The visiteur has already been saved : update it
+            $this->getDb()->update('visiteur', $visiteurData, array('id_visiteur' => $visiteur->getIdVisiteur()));
         } else {
-            // The article has never been saved : insert it
-            $this->getDb()->insert('t_article', $articleData);
-            // Get the id of the newly created article and set it on the entity.
-            $id = $this->getDb()->lastInsertId();
-            $article->setId($id);
+            // The visiteur has never been saved : insert it
+            $this->getDb()->insert('visiteur', $visiteurData);
+            // Get the id of the newly created visiteur and set it on the entity.
+            $id_visiteur = $this->getDb()->lastInsertId();
+            $visiteur->setIdVisiteur($id_visiteur);
         }
     }
 
     /**
-     * Removes an article from the database.
+     * Removes an visiteur from the database.
      *
-     * @param integer $id The article id.
+     * @param integer $id_visiteur The visiteur id.
      */
-    public function delete($id) {
-        // Delete the article
-        $this->getDb()->delete('t_article', array('art_id' => $id));
+    public function delete($id_visiteur) {
+        // Delete the visiteur
+        $this->getDb()->delete('visiteur', array('id_visiteur' => $id_visiteur));
     }
 
     /**
-     * Creates an Article object based on a DB row.
+     * Creates an Visiteur object based on a DB row.
      *
-     * @param array $row The DB row containing Article data.
-     * @return \MicroCMS\Domain\Article
+     * @param array $row The DB row containing Visiteur data.
+     * @return \MicroCMS\Domain\Visiteur
      */
     protected function buildDomainObject($row) {
-        $article = new Article();
-        $article->setId($row['art_id']);
-        $article->setTitle($row['art_title']);
-        $article->setContent($row['art_content']);
-        return $article;
+        $visiteur = new Visiteur();
+        $visiteur->setIdVisiteur($row['id_visiteur']);
+        $visiteur->setIdSecteur($row['id_secteur']);
+        $visiteur->setNom($row['nom']);
+        $visiteur->setPrenom($row['prenom']);
+        $visiteur->setLogin($row['login']);
+        $visiteur->setMdp($row['mdp']);
+        $visiteur->setAdresse($row['adresse']);
+        $visiteur->setCp($row['cp']);
+        $visiteur->setVille($row['ville']);
+        $visiteur->setDateEmbauche($row['dateEmbauche']);
+        $visiteur->setPrivileges($row['Privileges']);
+        return $visiteur;
     }
 }
