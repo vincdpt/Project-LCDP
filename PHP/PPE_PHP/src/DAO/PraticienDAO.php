@@ -68,7 +68,7 @@ class PraticienDAO extends DAO
             $this->getDb()->insert('praticien', $praticienData);
             // Get the id of the newly created praticien and set it on the entity.
             $id_praticien = $this->getDb()->lastInsertId();
-            $praticien->setId($id_praticien);
+            $praticien->setIdPraticien($id_praticien);
         }
     }
 

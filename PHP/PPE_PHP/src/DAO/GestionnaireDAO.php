@@ -2,6 +2,10 @@
 
 namespace PPE_PHP\DAO;
 
+use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\User\UserProviderInterface;
+use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
+use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use PPE_PHP\Domain\Gestionnaire;
 
 class GestionnaireDAO extends DAO
@@ -73,6 +77,37 @@ class GestionnaireDAO extends DAO
     public function delete($id_gestionnaire) {
         // Delete the gestionnaire
         $this->getDb()->delete('gestionnaire', array('id_gestionnaire' => $id_gestionnaire));
+    }
+
+    public function loadUserByUsername($login)
+    {
+        $sql = "select * from gestionnaire where login=?";
+        $row = $this->getDb()->fetchAssoc($sql, array($login));
+
+        if ($row)
+            return $this->buildDomainObject($row);
+        else
+            throw new UsernameNotFoundException(sprintf('login "%s" not found.', $login));
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function refreshUser(UserInterface $login)
+    {
+        $class = get_class($login);
+        if (!$this->supportsClass($class)) {
+            throw new UnsupportedUserException(sprintf('Instances of "%s" are not supported.', $class));
+        }
+        return $this->loadUserByUsername($login->getLoginGestionnaire());
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function supportsClass($class)
+    {
+        return 'PPE_php\Domain\Gestionnaire' === $class;
     }
 
     /**

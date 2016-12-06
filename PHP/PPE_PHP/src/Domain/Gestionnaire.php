@@ -2,6 +2,8 @@
 
 namespace PPE_PHP\Domain;
 
+use Symfony\Component\Security\Core\User\UserInterface;
+
 class Gestionnaire
 {
     /**
