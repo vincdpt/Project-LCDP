@@ -26,5 +26,13 @@ namespace PpeGSBTeam27
         {
 
         }
+
+        private void btnDeconnection_Click(object sender, EventArgs e)
+        {
+            DAOFactory.cnx.Close();
+            FormConnection frm = new FormConnection();
+            this.Visible = false;
+            frm.Show();
+        }
     }
 }

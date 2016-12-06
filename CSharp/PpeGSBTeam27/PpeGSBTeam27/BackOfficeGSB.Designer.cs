@@ -163,6 +163,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.tabClientsSupprimer = new System.Windows.Forms.TabPage();
             this.tabVisiteurs = new System.Windows.Forms.TabPage();
+            this.btnDeconnection = new System.Windows.Forms.Button();
             this.tabGestionGSB.SuspendLayout();
             this.tabProduits.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduits)).BeginInit();
@@ -187,7 +188,7 @@
             this.tabGestionGSB.Location = new System.Drawing.Point(-3, -2);
             this.tabGestionGSB.Name = "tabGestionGSB";
             this.tabGestionGSB.SelectedIndex = 0;
-            this.tabGestionGSB.Size = new System.Drawing.Size(1435, 871);
+            this.tabGestionGSB.Size = new System.Drawing.Size(1435, 650);
             this.tabGestionGSB.TabIndex = 0;
             // 
             // tabProduits
@@ -198,7 +199,7 @@
             this.tabProduits.Location = new System.Drawing.Point(4, 22);
             this.tabProduits.Name = "tabProduits";
             this.tabProduits.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProduits.Size = new System.Drawing.Size(1427, 845);
+            this.tabProduits.Size = new System.Drawing.Size(1427, 624);
             this.tabProduits.TabIndex = 0;
             this.tabProduits.Text = "Produits";
             // 
@@ -217,7 +218,7 @@
             this.ProduitsPrixEchantillon});
             this.dgvProduits.Location = new System.Drawing.Point(448, 25);
             this.dgvProduits.Name = "dgvProduits";
-            this.dgvProduits.Size = new System.Drawing.Size(967, 656);
+            this.dgvProduits.Size = new System.Drawing.Size(967, 561);
             this.dgvProduits.TabIndex = 1;
             this.dgvProduits.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduits_CellContentClick);
             // 
@@ -556,7 +557,6 @@
             this.gbxProduitsModif.Size = new System.Drawing.Size(419, 436);
             this.gbxProduitsModif.TabIndex = 5;
             this.gbxProduitsModif.TabStop = false;
-            this.gbxProduitsModif.Text = "groupBox1";
             // 
             // btnProduitsModifValiderLaModif
             // 
@@ -884,7 +884,7 @@
             this.tabClients.Location = new System.Drawing.Point(4, 22);
             this.tabClients.Name = "tabClients";
             this.tabClients.Padding = new System.Windows.Forms.Padding(3);
-            this.tabClients.Size = new System.Drawing.Size(1427, 845);
+            this.tabClients.Size = new System.Drawing.Size(1427, 624);
             this.tabClients.TabIndex = 1;
             this.tabClients.Text = "Clients";
             // 
@@ -903,7 +903,7 @@
             this.ClientsCoefConfiance});
             this.dgvClients.Location = new System.Drawing.Point(448, 25);
             this.dgvClients.Name = "dgvClients";
-            this.dgvClients.Size = new System.Drawing.Size(967, 656);
+            this.dgvClients.Size = new System.Drawing.Size(967, 561);
             this.dgvClients.TabIndex = 1;
             // 
             // ClientsCode
@@ -1451,11 +1451,23 @@
             this.tabVisiteurs.Text = "Visiteurs";
             this.tabVisiteurs.UseVisualStyleBackColor = true;
             // 
+            // btnDeconnection
+            // 
+            this.btnDeconnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.btnDeconnection.Location = new System.Drawing.Point(600, 730);
+            this.btnDeconnection.Name = "btnDeconnection";
+            this.btnDeconnection.Size = new System.Drawing.Size(190, 44);
+            this.btnDeconnection.TabIndex = 1;
+            this.btnDeconnection.Text = "Déconnection";
+            this.btnDeconnection.UseVisualStyleBackColor = true;
+            this.btnDeconnection.Click += new System.EventHandler(this.btnDeconnection_Click);
+            // 
             // BackOfficeGSB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1428, 865);
+            this.Controls.Add(this.btnDeconnection);
             this.Controls.Add(this.tabGestionGSB);
             this.Name = "BackOfficeGSB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1623,5 +1635,6 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox txbClientsModifChercherNom;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Button btnDeconnection;
     }
 }
