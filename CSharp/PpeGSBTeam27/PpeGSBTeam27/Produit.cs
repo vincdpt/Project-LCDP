@@ -34,7 +34,7 @@ namespace PpeGSBTeam27
                 CI = desCI;
                 presentation = unePresentation;
                 dosage = unDosage;
-                // Penser a une famille
+                famille = DAOProduit.getNomFamille(unIDFamille);
                 prixHT = unPrixHT;
                 prixEch = unPrixEch;
                 interaction = uneInteraction;
