@@ -169,9 +169,24 @@ namespace PpeGSBTeam27
             }
         }
 
+        //Reqûête de suppression d'un produit dans la BDD
+        public static string supprimerProduit(int num)
+        {
+            DAOFactory dfp = new DAOFactory();
+            try
+            {
+                dfp.connexion();
+                string requeteLigne = "DELETE FROM produit WHERE num=" + num + ";";
+                dfp.execSql(requeteLigne);
+                dfp.deconnexion();
+                return "Produit Supprimé";
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                return "Erreur dans la suppression du produit";
+            }
+        }
 
     }
-
-
-
 }

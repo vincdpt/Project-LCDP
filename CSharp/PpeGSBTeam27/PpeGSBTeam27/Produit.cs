@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace PpeGSBTeam27
 {
@@ -144,7 +145,72 @@ namespace PpeGSBTeam27
             return laListe;
         }
 
+        // Return False si le Nom ou le Numéro sont déjà utilisés, sinon return True
+        public static Boolean validerNumNom(int num, string nom)
+        {
+            int ok = 0;
+            List<Produit> lesProduits = listeProduit();
+            for (int i = 0; i < lesProduits.Count(); i++)
+            {
+                if (lesProduits.ElementAt(i).getNum().Equals(num) || lesProduits.ElementAt(i).getNom().Equals(nom))
+                {
+                }
+                else
+                {
+                    ok = ok + 1;
+                }
+            }
 
+            if (ok == lesProduits.Count())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        // Après avoir vérifié que le Nom et le Num n'étaient pas déjà utilisés (return true à vérification), 
+        // effectue un appel à la méthode DAOProduit pour en crée un nouveau.
+        // Puis Return le message de validation ou d'erreur.
+        public static String creerProduit(Produit unProduit)
+        {
+            string message;
+            Boolean verification = Produit.validerNumNom(unProduit.getNum(), unProduit.getNom());
+            if (verification)
+            {
+                message = DAOProduit.creerProduit(unProduit);
+                return message;
+            }
+            else
+            {
+                return "Le numero de produit ou le nom utilisé existe déjà";
+            }
+        }
+
+        // Permet la suppression d'un produit puis return un message de validation ou d'erreur.
+        public static string supprimerProduit(Produit unProduit)
+        {
+            string message;
+            message = DAOProduit.supprimerProduit(unProduit.getNum());
+            return message;
+        }
+
+        // Modification d'un produit puis return un message de validation ou d'erreur.
+        public static string modifierProduit(Produit unProduit)
+        {
+            string message;
+            message = DAOProduit.modifierProduit(unProduit);
+            return message;
+        }
+
+        // Création de la liste Famille depuis le DAOProduit.
+        public static ArrayList listeFamille()
+        {
+            ArrayList lesFamilles = DAOProduit.listeFamille();
+            return lesFamilles;
+        }
         #endregion
     }
- }
+}
