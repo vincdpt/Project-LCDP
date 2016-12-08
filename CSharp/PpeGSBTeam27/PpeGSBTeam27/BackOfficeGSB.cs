@@ -34,5 +34,15 @@ namespace PpeGSBTeam27
             this.Visible = false;
             frm.Show();
         }
+
+        private void tabProduits_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxVisiteursCreerSecteur_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

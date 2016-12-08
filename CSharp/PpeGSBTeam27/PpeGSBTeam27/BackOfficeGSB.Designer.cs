@@ -96,7 +96,7 @@
             this.tabProduitsSupprimer = new System.Windows.Forms.TabPage();
             this.label12 = new System.Windows.Forms.Label();
             this.cbxProduitsSupprimerChercherAlphabetique = new System.Windows.Forms.ComboBox();
-            this.btnProduitsSupprimerValider = new System.Windows.Forms.Button();
+            this.btnProduitsSupprimerValiderSupression = new System.Windows.Forms.Button();
             this.txbProduitsSupprimerChercherNum = new System.Windows.Forms.TextBox();
             this.labProduitsSupprimerChercherNum = new System.Windows.Forms.Label();
             this.txbProduitsSupprimerChercherNom = new System.Windows.Forms.TextBox();
@@ -117,7 +117,6 @@
             this.btnClientsCreerAnnuler = new System.Windows.Forms.Button();
             this.cbxClientsCreerTypeProfession = new System.Windows.Forms.ComboBox();
             this.btnClientsCreerValider = new System.Windows.Forms.Button();
-            this.txbClientsCreerCode = new System.Windows.Forms.TextBox();
             this.labClientsCreerCoefConfiance = new System.Windows.Forms.Label();
             this.txbClientsCreerNom = new System.Windows.Forms.TextBox();
             this.txbClientsCreerRaisonSociale = new System.Windows.Forms.TextBox();
@@ -133,7 +132,6 @@
             this.txbClientsCreerCoefConfiance = new System.Windows.Forms.TextBox();
             this.labClientsCreerRaisonSociale = new System.Windows.Forms.Label();
             this.labClientsCreerNom = new System.Windows.Forms.Label();
-            this.labClientsCreerCode = new System.Windows.Forms.Label();
             this.tabClientsModifier = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnClientsModifierValiderModif = new System.Windows.Forms.Button();
@@ -145,7 +143,6 @@
             this.txbClientsModifierAdresse = new System.Windows.Forms.TextBox();
             this.txbClientsModifierRaisonSociale = new System.Windows.Forms.TextBox();
             this.txbClientsModifierNom = new System.Windows.Forms.TextBox();
-            this.txbClientsModifierCode = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -154,7 +151,6 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.btnClientsModifierValiderRecherche = new System.Windows.Forms.Button();
             this.txbClientsModifChercherCode = new System.Windows.Forms.TextBox();
@@ -164,6 +160,66 @@
             this.tabClientsSupprimer = new System.Windows.Forms.TabPage();
             this.tabVisiteurs = new System.Windows.Forms.TabPage();
             this.btnDeconnection = new System.Windows.Forms.Button();
+            this.btnProduitsSupprimerRechercher = new System.Windows.Forms.Button();
+            this.btnClientsSupprimerRechercher = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cbxClientsSupprimerChercherAlphabetique = new System.Windows.Forms.ComboBox();
+            this.btnClientsSupprimerValiderSupression = new System.Windows.Forms.Button();
+            this.txbClientsSupprimerChercherCode = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txbClientsSupprimerChercherNom = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.tabVisiteursGestion = new System.Windows.Forms.TabControl();
+            this.tabVisiteursCreer = new System.Windows.Forms.TabPage();
+            this.tabVisiteursModifier = new System.Windows.Forms.TabPage();
+            this.tabVisiteursSupprimer = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txbVisiteursCreerId = new System.Windows.Forms.TextBox();
+            this.txbVisiteursCreerNom = new System.Windows.Forms.TextBox();
+            this.txbVisiteursCreerPrenom = new System.Windows.Forms.TextBox();
+            this.txbVisiteursCreerAdresse = new System.Windows.Forms.TextBox();
+            this.txbVisiteursCreerCP = new System.Windows.Forms.TextBox();
+            this.txbVisiteursCreerVille = new System.Windows.Forms.TextBox();
+            this.cbxVisiteursCreerSecteur = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.btnVisiteursCreerAnnuler = new System.Windows.Forms.Button();
+            this.btnVisiteursCreerValiderCreation = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnVisiteursModifierValiderModif = new System.Windows.Forms.Button();
+            this.cbxVisiteursModifierSecteurIntervention = new System.Windows.Forms.ComboBox();
+            this.txbVisiteursModifierVille = new System.Windows.Forms.TextBox();
+            this.txbVisiteursModifierCP = new System.Windows.Forms.TextBox();
+            this.txbVisiteursModifierAdresse = new System.Windows.Forms.TextBox();
+            this.txbVisiteursModifierPrenom = new System.Windows.Forms.TextBox();
+            this.txbVisiteursModifierNom = new System.Windows.Forms.TextBox();
+            this.txbVisiteursModifierId = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.btnVisiteursSupprimerRechercher = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
+            this.cbxVisiteursSupprimerChercherAlphabetique = new System.Windows.Forms.ComboBox();
+            this.btnVisiteursSupprimerValiderSuppression = new System.Windows.Forms.Button();
+            this.txbVisiteursSupprimerChercherId = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.txbVisiteursSupprimerChercherNom = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
             this.tabGestionGSB.SuspendLayout();
             this.tabProduits.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduits)).BeginInit();
@@ -178,6 +234,14 @@
             this.tabClientsCreer.SuspendLayout();
             this.tabClientsModifier.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabClientsSupprimer.SuspendLayout();
+            this.tabVisiteurs.SuspendLayout();
+            this.tabVisiteursGestion.SuspendLayout();
+            this.tabVisiteursCreer.SuspendLayout();
+            this.tabVisiteursModifier.SuspendLayout();
+            this.tabVisiteursSupprimer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabGestionGSB
@@ -202,6 +266,7 @@
             this.tabProduits.Size = new System.Drawing.Size(1427, 624);
             this.tabProduits.TabIndex = 0;
             this.tabProduits.Text = "Produits";
+            this.tabProduits.Click += new System.EventHandler(this.tabProduits_Click);
             // 
             // dgvProduits
             // 
@@ -803,9 +868,10 @@
             // 
             // tabProduitsSupprimer
             // 
+            this.tabProduitsSupprimer.Controls.Add(this.btnProduitsSupprimerRechercher);
             this.tabProduitsSupprimer.Controls.Add(this.label12);
             this.tabProduitsSupprimer.Controls.Add(this.cbxProduitsSupprimerChercherAlphabetique);
-            this.tabProduitsSupprimer.Controls.Add(this.btnProduitsSupprimerValider);
+            this.tabProduitsSupprimer.Controls.Add(this.btnProduitsSupprimerValiderSupression);
             this.tabProduitsSupprimer.Controls.Add(this.txbProduitsSupprimerChercherNum);
             this.tabProduitsSupprimer.Controls.Add(this.labProduitsSupprimerChercherNum);
             this.tabProduitsSupprimer.Controls.Add(this.txbProduitsSupprimerChercherNom);
@@ -821,7 +887,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(107, 115);
+            this.label12.Location = new System.Drawing.Point(121, 104);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(175, 13);
             this.label12.TabIndex = 11;
@@ -830,19 +896,19 @@
             // cbxProduitsSupprimerChercherAlphabetique
             // 
             this.cbxProduitsSupprimerChercherAlphabetique.FormattingEnabled = true;
-            this.cbxProduitsSupprimerChercherAlphabetique.Location = new System.Drawing.Point(124, 131);
+            this.cbxProduitsSupprimerChercherAlphabetique.Location = new System.Drawing.Point(124, 120);
             this.cbxProduitsSupprimerChercherAlphabetique.Name = "cbxProduitsSupprimerChercherAlphabetique";
             this.cbxProduitsSupprimerChercherAlphabetique.Size = new System.Drawing.Size(147, 21);
             this.cbxProduitsSupprimerChercherAlphabetique.TabIndex = 10;
             // 
-            // btnProduitsSupprimerValider
+            // btnProduitsSupprimerValiderSupression
             // 
-            this.btnProduitsSupprimerValider.Location = new System.Drawing.Point(297, 53);
-            this.btnProduitsSupprimerValider.Name = "btnProduitsSupprimerValider";
-            this.btnProduitsSupprimerValider.Size = new System.Drawing.Size(90, 36);
-            this.btnProduitsSupprimerValider.TabIndex = 9;
-            this.btnProduitsSupprimerValider.Text = "Supprimer";
-            this.btnProduitsSupprimerValider.UseVisualStyleBackColor = true;
+            this.btnProduitsSupprimerValiderSupression.Location = new System.Drawing.Point(124, 166);
+            this.btnProduitsSupprimerValiderSupression.Name = "btnProduitsSupprimerValiderSupression";
+            this.btnProduitsSupprimerValiderSupression.Size = new System.Drawing.Size(147, 33);
+            this.btnProduitsSupprimerValiderSupression.TabIndex = 9;
+            this.btnProduitsSupprimerValiderSupression.Text = "Supprimer";
+            this.btnProduitsSupprimerValiderSupression.UseVisualStyleBackColor = true;
             // 
             // txbProduitsSupprimerChercherNum
             // 
@@ -967,7 +1033,6 @@
             this.tabClientsCreer.Controls.Add(this.btnClientsCreerAnnuler);
             this.tabClientsCreer.Controls.Add(this.cbxClientsCreerTypeProfession);
             this.tabClientsCreer.Controls.Add(this.btnClientsCreerValider);
-            this.tabClientsCreer.Controls.Add(this.txbClientsCreerCode);
             this.tabClientsCreer.Controls.Add(this.labClientsCreerCoefConfiance);
             this.tabClientsCreer.Controls.Add(this.txbClientsCreerNom);
             this.tabClientsCreer.Controls.Add(this.txbClientsCreerRaisonSociale);
@@ -983,7 +1048,6 @@
             this.tabClientsCreer.Controls.Add(this.txbClientsCreerCoefConfiance);
             this.tabClientsCreer.Controls.Add(this.labClientsCreerRaisonSociale);
             this.tabClientsCreer.Controls.Add(this.labClientsCreerNom);
-            this.tabClientsCreer.Controls.Add(this.labClientsCreerCode);
             this.tabClientsCreer.Location = new System.Drawing.Point(4, 22);
             this.tabClientsCreer.Name = "tabClientsCreer";
             this.tabClientsCreer.Padding = new System.Windows.Forms.Padding(3);
@@ -1017,13 +1081,6 @@
             this.btnClientsCreerValider.TabIndex = 18;
             this.btnClientsCreerValider.Text = "Valider";
             this.btnClientsCreerValider.UseVisualStyleBackColor = true;
-            // 
-            // txbClientsCreerCode
-            // 
-            this.txbClientsCreerCode.Location = new System.Drawing.Point(191, 15);
-            this.txbClientsCreerCode.Name = "txbClientsCreerCode";
-            this.txbClientsCreerCode.Size = new System.Drawing.Size(217, 20);
-            this.txbClientsCreerCode.TabIndex = 0;
             // 
             // labClientsCreerCoefConfiance
             // 
@@ -1154,16 +1211,6 @@
             this.labClientsCreerNom.TabIndex = 10;
             this.labClientsCreerNom.Text = "Nom :";
             // 
-            // labClientsCreerCode
-            // 
-            this.labClientsCreerCode.AutoSize = true;
-            this.labClientsCreerCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.labClientsCreerCode.Location = new System.Drawing.Point(15, 14);
-            this.labClientsCreerCode.Name = "labClientsCreerCode";
-            this.labClientsCreerCode.Size = new System.Drawing.Size(52, 18);
-            this.labClientsCreerCode.TabIndex = 9;
-            this.labClientsCreerCode.Text = "Code :";
-            // 
             // tabClientsModifier
             // 
             this.tabClientsModifier.Controls.Add(this.groupBox1);
@@ -1191,7 +1238,6 @@
             this.groupBox1.Controls.Add(this.txbClientsModifierAdresse);
             this.groupBox1.Controls.Add(this.txbClientsModifierRaisonSociale);
             this.groupBox1.Controls.Add(this.txbClientsModifierNom);
-            this.groupBox1.Controls.Add(this.txbClientsModifierCode);
             this.groupBox1.Controls.Add(this.label27);
             this.groupBox1.Controls.Add(this.label28);
             this.groupBox1.Controls.Add(this.label29);
@@ -1200,14 +1246,12 @@
             this.groupBox1.Controls.Add(this.label32);
             this.groupBox1.Controls.Add(this.label33);
             this.groupBox1.Controls.Add(this.label34);
-            this.groupBox1.Controls.Add(this.label35);
             this.groupBox1.Controls.Add(this.label36);
             this.groupBox1.Location = new System.Drawing.Point(3, 123);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(419, 432);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // btnClientsModifierValiderModif
             // 
@@ -1282,13 +1326,6 @@
             this.txbClientsModifierNom.Name = "txbClientsModifierNom";
             this.txbClientsModifierNom.Size = new System.Drawing.Size(225, 20);
             this.txbClientsModifierNom.TabIndex = 33;
-            // 
-            // txbClientsModifierCode
-            // 
-            this.txbClientsModifierCode.Location = new System.Drawing.Point(167, 48);
-            this.txbClientsModifierCode.Name = "txbClientsModifierCode";
-            this.txbClientsModifierCode.Size = new System.Drawing.Size(225, 20);
-            this.txbClientsModifierCode.TabIndex = 32;
             // 
             // label27
             // 
@@ -1370,16 +1407,6 @@
             this.label34.TabIndex = 23;
             this.label34.Text = "Nom :";
             // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(15, 49);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(47, 16);
-            this.label35.TabIndex = 22;
-            this.label35.Text = "Code :";
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -1433,6 +1460,14 @@
             // 
             // tabClientsSupprimer
             // 
+            this.tabClientsSupprimer.Controls.Add(this.btnClientsSupprimerRechercher);
+            this.tabClientsSupprimer.Controls.Add(this.label13);
+            this.tabClientsSupprimer.Controls.Add(this.cbxClientsSupprimerChercherAlphabetique);
+            this.tabClientsSupprimer.Controls.Add(this.btnClientsSupprimerValiderSupression);
+            this.tabClientsSupprimer.Controls.Add(this.txbClientsSupprimerChercherCode);
+            this.tabClientsSupprimer.Controls.Add(this.label14);
+            this.tabClientsSupprimer.Controls.Add(this.txbClientsSupprimerChercherNom);
+            this.tabClientsSupprimer.Controls.Add(this.label15);
             this.tabClientsSupprimer.Location = new System.Drawing.Point(4, 22);
             this.tabClientsSupprimer.Name = "tabClientsSupprimer";
             this.tabClientsSupprimer.Padding = new System.Windows.Forms.Padding(3);
@@ -1443,10 +1478,12 @@
             // 
             // tabVisiteurs
             // 
+            this.tabVisiteurs.Controls.Add(this.dataGridView1);
+            this.tabVisiteurs.Controls.Add(this.tabVisiteursGestion);
             this.tabVisiteurs.Location = new System.Drawing.Point(4, 22);
             this.tabVisiteurs.Name = "tabVisiteurs";
             this.tabVisiteurs.Padding = new System.Windows.Forms.Padding(3);
-            this.tabVisiteurs.Size = new System.Drawing.Size(1427, 845);
+            this.tabVisiteurs.Size = new System.Drawing.Size(1427, 624);
             this.tabVisiteurs.TabIndex = 2;
             this.tabVisiteurs.Text = "Visiteurs";
             this.tabVisiteurs.UseVisualStyleBackColor = true;
@@ -1461,6 +1498,577 @@
             this.btnDeconnection.Text = "Déconnection";
             this.btnDeconnection.UseVisualStyleBackColor = true;
             this.btnDeconnection.Click += new System.EventHandler(this.btnDeconnection_Click);
+            // 
+            // btnProduitsSupprimerRechercher
+            // 
+            this.btnProduitsSupprimerRechercher.Location = new System.Drawing.Point(295, 53);
+            this.btnProduitsSupprimerRechercher.Name = "btnProduitsSupprimerRechercher";
+            this.btnProduitsSupprimerRechercher.Size = new System.Drawing.Size(84, 36);
+            this.btnProduitsSupprimerRechercher.TabIndex = 12;
+            this.btnProduitsSupprimerRechercher.Text = "Rechercher";
+            this.btnProduitsSupprimerRechercher.UseVisualStyleBackColor = true;
+            // 
+            // btnClientsSupprimerRechercher
+            // 
+            this.btnClientsSupprimerRechercher.Location = new System.Drawing.Point(295, 53);
+            this.btnClientsSupprimerRechercher.Name = "btnClientsSupprimerRechercher";
+            this.btnClientsSupprimerRechercher.Size = new System.Drawing.Size(84, 36);
+            this.btnClientsSupprimerRechercher.TabIndex = 20;
+            this.btnClientsSupprimerRechercher.Text = "Rechercher";
+            this.btnClientsSupprimerRechercher.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(121, 104);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(175, 13);
+            this.label13.TabIndex = 19;
+            this.label13.Text = "Recherche par ordre alphabétique :";
+            // 
+            // cbxClientsSupprimerChercherAlphabetique
+            // 
+            this.cbxClientsSupprimerChercherAlphabetique.FormattingEnabled = true;
+            this.cbxClientsSupprimerChercherAlphabetique.Location = new System.Drawing.Point(124, 120);
+            this.cbxClientsSupprimerChercherAlphabetique.Name = "cbxClientsSupprimerChercherAlphabetique";
+            this.cbxClientsSupprimerChercherAlphabetique.Size = new System.Drawing.Size(147, 21);
+            this.cbxClientsSupprimerChercherAlphabetique.TabIndex = 18;
+            // 
+            // btnClientsSupprimerValiderSupression
+            // 
+            this.btnClientsSupprimerValiderSupression.Location = new System.Drawing.Point(124, 166);
+            this.btnClientsSupprimerValiderSupression.Name = "btnClientsSupprimerValiderSupression";
+            this.btnClientsSupprimerValiderSupression.Size = new System.Drawing.Size(147, 33);
+            this.btnClientsSupprimerValiderSupression.TabIndex = 17;
+            this.btnClientsSupprimerValiderSupression.Text = "Supprimer";
+            this.btnClientsSupprimerValiderSupression.UseVisualStyleBackColor = true;
+            // 
+            // txbClientsSupprimerChercherCode
+            // 
+            this.txbClientsSupprimerChercherCode.Location = new System.Drawing.Point(124, 81);
+            this.txbClientsSupprimerChercherCode.Name = "txbClientsSupprimerChercherCode";
+            this.txbClientsSupprimerChercherCode.Size = new System.Drawing.Size(147, 20);
+            this.txbClientsSupprimerChercherCode.TabIndex = 16;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(145, 65);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(111, 13);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "Recherche par code :";
+            // 
+            // txbClientsSupprimerChercherNom
+            // 
+            this.txbClientsSupprimerChercherNom.Location = new System.Drawing.Point(124, 42);
+            this.txbClientsSupprimerChercherNom.Name = "txbClientsSupprimerChercherNom";
+            this.txbClientsSupprimerChercherNom.Size = new System.Drawing.Size(147, 20);
+            this.txbClientsSupprimerChercherNom.TabIndex = 14;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(149, 26);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(107, 13);
+            this.label15.TabIndex = 13;
+            this.label15.Text = "Recherche par nom :";
+            // 
+            // tabVisiteursGestion
+            // 
+            this.tabVisiteursGestion.Controls.Add(this.tabVisiteursCreer);
+            this.tabVisiteursGestion.Controls.Add(this.tabVisiteursModifier);
+            this.tabVisiteursGestion.Controls.Add(this.tabVisiteursSupprimer);
+            this.tabVisiteursGestion.Location = new System.Drawing.Point(3, 3);
+            this.tabVisiteursGestion.Name = "tabVisiteursGestion";
+            this.tabVisiteursGestion.SelectedIndex = 0;
+            this.tabVisiteursGestion.Size = new System.Drawing.Size(439, 587);
+            this.tabVisiteursGestion.TabIndex = 0;
+            // 
+            // tabVisiteursCreer
+            // 
+            this.tabVisiteursCreer.Controls.Add(this.btnVisiteursCreerValiderCreation);
+            this.tabVisiteursCreer.Controls.Add(this.btnVisiteursCreerAnnuler);
+            this.tabVisiteursCreer.Controls.Add(this.label22);
+            this.tabVisiteursCreer.Controls.Add(this.label21);
+            this.tabVisiteursCreer.Controls.Add(this.label20);
+            this.tabVisiteursCreer.Controls.Add(this.label19);
+            this.tabVisiteursCreer.Controls.Add(this.label18);
+            this.tabVisiteursCreer.Controls.Add(this.label17);
+            this.tabVisiteursCreer.Controls.Add(this.label16);
+            this.tabVisiteursCreer.Controls.Add(this.cbxVisiteursCreerSecteur);
+            this.tabVisiteursCreer.Controls.Add(this.txbVisiteursCreerVille);
+            this.tabVisiteursCreer.Controls.Add(this.txbVisiteursCreerCP);
+            this.tabVisiteursCreer.Controls.Add(this.txbVisiteursCreerAdresse);
+            this.tabVisiteursCreer.Controls.Add(this.txbVisiteursCreerPrenom);
+            this.tabVisiteursCreer.Controls.Add(this.txbVisiteursCreerNom);
+            this.tabVisiteursCreer.Controls.Add(this.txbVisiteursCreerId);
+            this.tabVisiteursCreer.Location = new System.Drawing.Point(4, 22);
+            this.tabVisiteursCreer.Name = "tabVisiteursCreer";
+            this.tabVisiteursCreer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabVisiteursCreer.Size = new System.Drawing.Size(431, 561);
+            this.tabVisiteursCreer.TabIndex = 0;
+            this.tabVisiteursCreer.Text = "Créer";
+            this.tabVisiteursCreer.UseVisualStyleBackColor = true;
+            // 
+            // tabVisiteursModifier
+            // 
+            this.tabVisiteursModifier.Controls.Add(this.groupBox2);
+            this.tabVisiteursModifier.Controls.Add(this.button2);
+            this.tabVisiteursModifier.Controls.Add(this.textBox10);
+            this.tabVisiteursModifier.Controls.Add(this.label45);
+            this.tabVisiteursModifier.Controls.Add(this.textBox11);
+            this.tabVisiteursModifier.Controls.Add(this.label46);
+            this.tabVisiteursModifier.Location = new System.Drawing.Point(4, 22);
+            this.tabVisiteursModifier.Name = "tabVisiteursModifier";
+            this.tabVisiteursModifier.Padding = new System.Windows.Forms.Padding(3);
+            this.tabVisiteursModifier.Size = new System.Drawing.Size(431, 561);
+            this.tabVisiteursModifier.TabIndex = 1;
+            this.tabVisiteursModifier.Text = "Modifier";
+            this.tabVisiteursModifier.UseVisualStyleBackColor = true;
+            // 
+            // tabVisiteursSupprimer
+            // 
+            this.tabVisiteursSupprimer.Controls.Add(this.btnVisiteursSupprimerRechercher);
+            this.tabVisiteursSupprimer.Controls.Add(this.label23);
+            this.tabVisiteursSupprimer.Controls.Add(this.cbxVisiteursSupprimerChercherAlphabetique);
+            this.tabVisiteursSupprimer.Controls.Add(this.btnVisiteursSupprimerValiderSuppression);
+            this.tabVisiteursSupprimer.Controls.Add(this.txbVisiteursSupprimerChercherId);
+            this.tabVisiteursSupprimer.Controls.Add(this.label35);
+            this.tabVisiteursSupprimer.Controls.Add(this.txbVisiteursSupprimerChercherNom);
+            this.tabVisiteursSupprimer.Controls.Add(this.label39);
+            this.tabVisiteursSupprimer.Location = new System.Drawing.Point(4, 22);
+            this.tabVisiteursSupprimer.Name = "tabVisiteursSupprimer";
+            this.tabVisiteursSupprimer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabVisiteursSupprimer.Size = new System.Drawing.Size(431, 561);
+            this.tabVisiteursSupprimer.TabIndex = 2;
+            this.tabVisiteursSupprimer.Text = "Supprimer";
+            this.tabVisiteursSupprimer.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(448, 25);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(967, 561);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // txbVisiteursCreerId
+            // 
+            this.txbVisiteursCreerId.Location = new System.Drawing.Point(175, 15);
+            this.txbVisiteursCreerId.Name = "txbVisiteursCreerId";
+            this.txbVisiteursCreerId.Size = new System.Drawing.Size(218, 20);
+            this.txbVisiteursCreerId.TabIndex = 0;
+            // 
+            // txbVisiteursCreerNom
+            // 
+            this.txbVisiteursCreerNom.Location = new System.Drawing.Point(175, 42);
+            this.txbVisiteursCreerNom.Name = "txbVisiteursCreerNom";
+            this.txbVisiteursCreerNom.Size = new System.Drawing.Size(218, 20);
+            this.txbVisiteursCreerNom.TabIndex = 1;
+            // 
+            // txbVisiteursCreerPrenom
+            // 
+            this.txbVisiteursCreerPrenom.Location = new System.Drawing.Point(175, 70);
+            this.txbVisiteursCreerPrenom.Name = "txbVisiteursCreerPrenom";
+            this.txbVisiteursCreerPrenom.Size = new System.Drawing.Size(218, 20);
+            this.txbVisiteursCreerPrenom.TabIndex = 2;
+            // 
+            // txbVisiteursCreerAdresse
+            // 
+            this.txbVisiteursCreerAdresse.Location = new System.Drawing.Point(175, 96);
+            this.txbVisiteursCreerAdresse.Name = "txbVisiteursCreerAdresse";
+            this.txbVisiteursCreerAdresse.Size = new System.Drawing.Size(218, 20);
+            this.txbVisiteursCreerAdresse.TabIndex = 3;
+            // 
+            // txbVisiteursCreerCP
+            // 
+            this.txbVisiteursCreerCP.Location = new System.Drawing.Point(175, 122);
+            this.txbVisiteursCreerCP.Name = "txbVisiteursCreerCP";
+            this.txbVisiteursCreerCP.Size = new System.Drawing.Size(218, 20);
+            this.txbVisiteursCreerCP.TabIndex = 4;
+            // 
+            // txbVisiteursCreerVille
+            // 
+            this.txbVisiteursCreerVille.Location = new System.Drawing.Point(175, 148);
+            this.txbVisiteursCreerVille.Name = "txbVisiteursCreerVille";
+            this.txbVisiteursCreerVille.Size = new System.Drawing.Size(218, 20);
+            this.txbVisiteursCreerVille.TabIndex = 5;
+            // 
+            // cbxVisiteursCreerSecteur
+            // 
+            this.cbxVisiteursCreerSecteur.FormattingEnabled = true;
+            this.cbxVisiteursCreerSecteur.Location = new System.Drawing.Point(175, 174);
+            this.cbxVisiteursCreerSecteur.Name = "cbxVisiteursCreerSecteur";
+            this.cbxVisiteursCreerSecteur.Size = new System.Drawing.Size(218, 21);
+            this.cbxVisiteursCreerSecteur.TabIndex = 6;
+            this.cbxVisiteursCreerSecteur.SelectedIndexChanged += new System.EventHandler(this.cbxVisiteursCreerSecteur_SelectedIndexChanged);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label16.Location = new System.Drawing.Point(15, 14);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(27, 18);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "Id :";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label17.Location = new System.Drawing.Point(15, 69);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(69, 18);
+            this.label17.TabIndex = 8;
+            this.label17.Text = "Prenom :";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label18.Location = new System.Drawing.Point(15, 41);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(49, 18);
+            this.label18.TabIndex = 9;
+            this.label18.Text = "Nom :";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label19.Location = new System.Drawing.Point(15, 95);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(70, 18);
+            this.label19.TabIndex = 10;
+            this.label19.Text = "Adresse :";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label20.Location = new System.Drawing.Point(15, 121);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(98, 18);
+            this.label20.TabIndex = 11;
+            this.label20.Text = "Code Postal :";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label21.Location = new System.Drawing.Point(15, 173);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(157, 18);
+            this.label21.TabIndex = 12;
+            this.label21.Text = "Secteur d\'intervention :";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label22.Location = new System.Drawing.Point(15, 147);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(42, 18);
+            this.label22.TabIndex = 13;
+            this.label22.Text = "Ville :";
+            // 
+            // btnVisiteursCreerAnnuler
+            // 
+            this.btnVisiteursCreerAnnuler.Location = new System.Drawing.Point(44, 245);
+            this.btnVisiteursCreerAnnuler.Name = "btnVisiteursCreerAnnuler";
+            this.btnVisiteursCreerAnnuler.Size = new System.Drawing.Size(99, 35);
+            this.btnVisiteursCreerAnnuler.TabIndex = 14;
+            this.btnVisiteursCreerAnnuler.Text = "Annuler";
+            this.btnVisiteursCreerAnnuler.UseVisualStyleBackColor = true;
+            // 
+            // btnVisiteursCreerValiderCreation
+            // 
+            this.btnVisiteursCreerValiderCreation.Location = new System.Drawing.Point(209, 245);
+            this.btnVisiteursCreerValiderCreation.Name = "btnVisiteursCreerValiderCreation";
+            this.btnVisiteursCreerValiderCreation.Size = new System.Drawing.Size(117, 35);
+            this.btnVisiteursCreerValiderCreation.TabIndex = 15;
+            this.btnVisiteursCreerValiderCreation.Text = "Créer";
+            this.btnVisiteursCreerValiderCreation.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnVisiteursModifierValiderModif);
+            this.groupBox2.Controls.Add(this.cbxVisiteursModifierSecteurIntervention);
+            this.groupBox2.Controls.Add(this.txbVisiteursModifierVille);
+            this.groupBox2.Controls.Add(this.txbVisiteursModifierCP);
+            this.groupBox2.Controls.Add(this.txbVisiteursModifierAdresse);
+            this.groupBox2.Controls.Add(this.txbVisiteursModifierPrenom);
+            this.groupBox2.Controls.Add(this.txbVisiteursModifierNom);
+            this.groupBox2.Controls.Add(this.txbVisiteursModifierId);
+            this.groupBox2.Controls.Add(this.label26);
+            this.groupBox2.Controls.Add(this.label37);
+            this.groupBox2.Controls.Add(this.label38);
+            this.groupBox2.Controls.Add(this.label40);
+            this.groupBox2.Controls.Add(this.label41);
+            this.groupBox2.Controls.Add(this.label42);
+            this.groupBox2.Controls.Add(this.label43);
+            this.groupBox2.Controls.Add(this.label44);
+            this.groupBox2.Location = new System.Drawing.Point(6, 113);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(419, 432);
+            this.groupBox2.TabIndex = 70;
+            this.groupBox2.TabStop = false;
+            // 
+            // btnVisiteursModifierValiderModif
+            // 
+            this.btnVisiteursModifierValiderModif.Location = new System.Drawing.Point(162, 342);
+            this.btnVisiteursModifierValiderModif.Name = "btnVisiteursModifierValiderModif";
+            this.btnVisiteursModifierValiderModif.Size = new System.Drawing.Size(90, 34);
+            this.btnVisiteursModifierValiderModif.TabIndex = 42;
+            this.btnVisiteursModifierValiderModif.Text = "Modifier";
+            this.btnVisiteursModifierValiderModif.UseVisualStyleBackColor = true;
+            // 
+            // cbxVisiteursModifierSecteurIntervention
+            // 
+            this.cbxVisiteursModifierSecteurIntervention.FormattingEnabled = true;
+            this.cbxVisiteursModifierSecteurIntervention.Location = new System.Drawing.Point(167, 254);
+            this.cbxVisiteursModifierSecteurIntervention.Name = "cbxVisiteursModifierSecteurIntervention";
+            this.cbxVisiteursModifierSecteurIntervention.Size = new System.Drawing.Size(225, 21);
+            this.cbxVisiteursModifierSecteurIntervention.TabIndex = 39;
+            // 
+            // txbVisiteursModifierVille
+            // 
+            this.txbVisiteursModifierVille.Location = new System.Drawing.Point(167, 218);
+            this.txbVisiteursModifierVille.Name = "txbVisiteursModifierVille";
+            this.txbVisiteursModifierVille.Size = new System.Drawing.Size(225, 20);
+            this.txbVisiteursModifierVille.TabIndex = 38;
+            // 
+            // txbVisiteursModifierCP
+            // 
+            this.txbVisiteursModifierCP.Location = new System.Drawing.Point(167, 176);
+            this.txbVisiteursModifierCP.Multiline = true;
+            this.txbVisiteursModifierCP.Name = "txbVisiteursModifierCP";
+            this.txbVisiteursModifierCP.Size = new System.Drawing.Size(225, 20);
+            this.txbVisiteursModifierCP.TabIndex = 37;
+            this.txbVisiteursModifierCP.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            // 
+            // txbVisiteursModifierAdresse
+            // 
+            this.txbVisiteursModifierAdresse.Location = new System.Drawing.Point(167, 137);
+            this.txbVisiteursModifierAdresse.Multiline = true;
+            this.txbVisiteursModifierAdresse.Name = "txbVisiteursModifierAdresse";
+            this.txbVisiteursModifierAdresse.Size = new System.Drawing.Size(225, 20);
+            this.txbVisiteursModifierAdresse.TabIndex = 35;
+            this.txbVisiteursModifierAdresse.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            // 
+            // txbVisiteursModifierPrenom
+            // 
+            this.txbVisiteursModifierPrenom.Location = new System.Drawing.Point(167, 104);
+            this.txbVisiteursModifierPrenom.Multiline = true;
+            this.txbVisiteursModifierPrenom.Name = "txbVisiteursModifierPrenom";
+            this.txbVisiteursModifierPrenom.Size = new System.Drawing.Size(225, 20);
+            this.txbVisiteursModifierPrenom.TabIndex = 34;
+            this.txbVisiteursModifierPrenom.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            // 
+            // txbVisiteursModifierNom
+            // 
+            this.txbVisiteursModifierNom.Location = new System.Drawing.Point(167, 78);
+            this.txbVisiteursModifierNom.Name = "txbVisiteursModifierNom";
+            this.txbVisiteursModifierNom.Size = new System.Drawing.Size(225, 20);
+            this.txbVisiteursModifierNom.TabIndex = 33;
+            // 
+            // txbVisiteursModifierId
+            // 
+            this.txbVisiteursModifierId.Location = new System.Drawing.Point(167, 48);
+            this.txbVisiteursModifierId.Name = "txbVisiteursModifierId";
+            this.txbVisiteursModifierId.Size = new System.Drawing.Size(225, 20);
+            this.txbVisiteursModifierId.TabIndex = 32;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(15, 219);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(40, 16);
+            this.label26.TabIndex = 29;
+            this.label26.Text = "Ville :";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(15, 255);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(142, 16);
+            this.label37.TabIndex = 28;
+            this.label37.Text = "Secteur d\'intervention :";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(15, 177);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(32, 16);
+            this.label38.TabIndex = 27;
+            this.label38.Text = "CP :";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(15, 141);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(65, 16);
+            this.label40.TabIndex = 25;
+            this.label40.Text = "Adresse :";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(15, 105);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(61, 16);
+            this.label41.TabIndex = 24;
+            this.label41.Text = "Prenom :";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(15, 79);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(43, 16);
+            this.label42.TabIndex = 23;
+            this.label42.Text = "Nom :";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(15, 49);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(25, 16);
+            this.label43.TabIndex = 22;
+            this.label43.Text = "Id :";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.75F, System.Drawing.FontStyle.Bold);
+            this.label44.Location = new System.Drawing.Point(49, 16);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(314, 20);
+            this.label44.TabIndex = 0;
+            this.label44.Text = "Il faudra y mettre en invisible plus tard";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(299, 42);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(90, 36);
+            this.button2.TabIndex = 75;
+            this.button2.Text = "Valider";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(126, 70);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(147, 20);
+            this.textBox10.TabIndex = 74;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(151, 54);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(95, 13);
+            this.label45.TabIndex = 73;
+            this.label45.Text = "Recherche par id :";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(126, 31);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(147, 20);
+            this.textBox11.TabIndex = 72;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(151, 15);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(107, 13);
+            this.label46.TabIndex = 71;
+            this.label46.Text = "Recherche par nom :";
+            // 
+            // btnVisiteursSupprimerRechercher
+            // 
+            this.btnVisiteursSupprimerRechercher.Location = new System.Drawing.Point(292, 48);
+            this.btnVisiteursSupprimerRechercher.Name = "btnVisiteursSupprimerRechercher";
+            this.btnVisiteursSupprimerRechercher.Size = new System.Drawing.Size(84, 36);
+            this.btnVisiteursSupprimerRechercher.TabIndex = 28;
+            this.btnVisiteursSupprimerRechercher.Text = "Rechercher";
+            this.btnVisiteursSupprimerRechercher.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(118, 99);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(175, 13);
+            this.label23.TabIndex = 27;
+            this.label23.Text = "Recherche par ordre alphabétique :";
+            // 
+            // cbxVisiteursSupprimerChercherAlphabetique
+            // 
+            this.cbxVisiteursSupprimerChercherAlphabetique.FormattingEnabled = true;
+            this.cbxVisiteursSupprimerChercherAlphabetique.Location = new System.Drawing.Point(121, 115);
+            this.cbxVisiteursSupprimerChercherAlphabetique.Name = "cbxVisiteursSupprimerChercherAlphabetique";
+            this.cbxVisiteursSupprimerChercherAlphabetique.Size = new System.Drawing.Size(147, 21);
+            this.cbxVisiteursSupprimerChercherAlphabetique.TabIndex = 26;
+            // 
+            // btnVisiteursSupprimerValiderSuppression
+            // 
+            this.btnVisiteursSupprimerValiderSuppression.Location = new System.Drawing.Point(121, 161);
+            this.btnVisiteursSupprimerValiderSuppression.Name = "btnVisiteursSupprimerValiderSuppression";
+            this.btnVisiteursSupprimerValiderSuppression.Size = new System.Drawing.Size(147, 33);
+            this.btnVisiteursSupprimerValiderSuppression.TabIndex = 25;
+            this.btnVisiteursSupprimerValiderSuppression.Text = "Supprimer";
+            this.btnVisiteursSupprimerValiderSuppression.UseVisualStyleBackColor = true;
+            // 
+            // txbVisiteursSupprimerChercherId
+            // 
+            this.txbVisiteursSupprimerChercherId.Location = new System.Drawing.Point(121, 76);
+            this.txbVisiteursSupprimerChercherId.Name = "txbVisiteursSupprimerChercherId";
+            this.txbVisiteursSupprimerChercherId.Size = new System.Drawing.Size(147, 20);
+            this.txbVisiteursSupprimerChercherId.TabIndex = 24;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(142, 60);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(111, 13);
+            this.label35.TabIndex = 23;
+            this.label35.Text = "Recherche par code :";
+            // 
+            // txbVisiteursSupprimerChercherNom
+            // 
+            this.txbVisiteursSupprimerChercherNom.Location = new System.Drawing.Point(121, 37);
+            this.txbVisiteursSupprimerChercherNom.Name = "txbVisiteursSupprimerChercherNom";
+            this.txbVisiteursSupprimerChercherNom.Size = new System.Drawing.Size(147, 20);
+            this.txbVisiteursSupprimerChercherNom.TabIndex = 22;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(146, 21);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(107, 13);
+            this.label39.TabIndex = 21;
+            this.label39.Text = "Recherche par nom :";
             // 
             // BackOfficeGSB
             // 
@@ -1494,6 +2102,19 @@
             this.tabClientsModifier.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabClientsSupprimer.ResumeLayout(false);
+            this.tabClientsSupprimer.PerformLayout();
+            this.tabVisiteurs.ResumeLayout(false);
+            this.tabVisiteursGestion.ResumeLayout(false);
+            this.tabVisiteursCreer.ResumeLayout(false);
+            this.tabVisiteursCreer.PerformLayout();
+            this.tabVisiteursModifier.ResumeLayout(false);
+            this.tabVisiteursModifier.PerformLayout();
+            this.tabVisiteursSupprimer.ResumeLayout(false);
+            this.tabVisiteursSupprimer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1557,7 +2178,7 @@
         private System.Windows.Forms.Label labProduitsModifChercherNum;
         private System.Windows.Forms.TextBox txbProduitsModifChercherNom;
         private System.Windows.Forms.Label labProduitsModifChercherLab;
-        private System.Windows.Forms.Button btnProduitsSupprimerValider;
+        private System.Windows.Forms.Button btnProduitsSupprimerValiderSupression;
         private System.Windows.Forms.TextBox txbProduitsSupprimerChercherNum;
         private System.Windows.Forms.Label labProduitsSupprimerChercherNum;
         private System.Windows.Forms.TextBox txbProduitsSupprimerChercherNom;
@@ -1573,7 +2194,6 @@
         private System.Windows.Forms.TextBox txbClientsCreerAdresse;
         private System.Windows.Forms.TextBox txbClientsCreerRaisonSociale;
         private System.Windows.Forms.TextBox txbClientsCreerNom;
-        private System.Windows.Forms.TextBox txbClientsCreerCode;
         private System.Windows.Forms.TextBox txbClientsCreerCoefConfiance;
         private System.Windows.Forms.TextBox txbClientsCreerCoefNotoriete;
         private System.Windows.Forms.TextBox txbClientsCreerTelephone;
@@ -1588,7 +2208,6 @@
         private System.Windows.Forms.Label labClientsCreerAdresse;
         private System.Windows.Forms.Label labClientsCreerRaisonSociale;
         private System.Windows.Forms.Label labClientsCreerNom;
-        private System.Windows.Forms.Label labClientsCreerCode;
         private System.Windows.Forms.ComboBox cbxClientsCreerTypeProfession;
         private System.Windows.Forms.DataGridView dgvClients;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProduitsNumero;
@@ -1619,7 +2238,6 @@
         private System.Windows.Forms.TextBox txbClientsModifierAdresse;
         private System.Windows.Forms.TextBox txbClientsModifierRaisonSociale;
         private System.Windows.Forms.TextBox txbClientsModifierNom;
-        private System.Windows.Forms.TextBox txbClientsModifierCode;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
@@ -1628,7 +2246,6 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Button btnClientsModifierValiderRecherche;
         private System.Windows.Forms.TextBox txbClientsModifChercherCode;
@@ -1636,5 +2253,65 @@
         private System.Windows.Forms.TextBox txbClientsModifChercherNom;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button btnDeconnection;
+        private System.Windows.Forms.Button btnProduitsSupprimerRechercher;
+        private System.Windows.Forms.Button btnClientsSupprimerRechercher;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox cbxClientsSupprimerChercherAlphabetique;
+        private System.Windows.Forms.Button btnClientsSupprimerValiderSupression;
+        private System.Windows.Forms.TextBox txbClientsSupprimerChercherCode;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txbClientsSupprimerChercherNom;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TabControl tabVisiteursGestion;
+        private System.Windows.Forms.TabPage tabVisiteursCreer;
+        private System.Windows.Forms.TabPage tabVisiteursModifier;
+        private System.Windows.Forms.TabPage tabVisiteursSupprimer;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnVisiteursCreerValiderCreation;
+        private System.Windows.Forms.Button btnVisiteursCreerAnnuler;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox cbxVisiteursCreerSecteur;
+        private System.Windows.Forms.TextBox txbVisiteursCreerVille;
+        private System.Windows.Forms.TextBox txbVisiteursCreerCP;
+        private System.Windows.Forms.TextBox txbVisiteursCreerAdresse;
+        private System.Windows.Forms.TextBox txbVisiteursCreerPrenom;
+        private System.Windows.Forms.TextBox txbVisiteursCreerNom;
+        private System.Windows.Forms.TextBox txbVisiteursCreerId;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnVisiteursModifierValiderModif;
+        private System.Windows.Forms.ComboBox cbxVisiteursModifierSecteurIntervention;
+        private System.Windows.Forms.TextBox txbVisiteursModifierVille;
+        private System.Windows.Forms.TextBox txbVisiteursModifierCP;
+        private System.Windows.Forms.TextBox txbVisiteursModifierAdresse;
+        private System.Windows.Forms.TextBox txbVisiteursModifierPrenom;
+        private System.Windows.Forms.TextBox txbVisiteursModifierNom;
+        private System.Windows.Forms.TextBox txbVisiteursModifierId;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Button btnVisiteursSupprimerRechercher;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.ComboBox cbxVisiteursSupprimerChercherAlphabetique;
+        private System.Windows.Forms.Button btnVisiteursSupprimerValiderSuppression;
+        private System.Windows.Forms.TextBox txbVisiteursSupprimerChercherId;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox txbVisiteursSupprimerChercherNom;
+        private System.Windows.Forms.Label label39;
     }
 }
