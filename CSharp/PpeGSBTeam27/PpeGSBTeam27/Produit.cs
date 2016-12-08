@@ -42,7 +42,7 @@ namespace PpeGSBTeam27
 
             #endregion
 
-            #region getter/setter
+            #region Getters / Setters
             public int getNum()
             {
                 return num;
@@ -133,10 +133,18 @@ namespace PpeGSBTeam27
                 return interaction;
             }
 
-            #endregion
+        #endregion
 
-            #region Procédures/Fonctions
+        #region Procédures/Fonctions
 
-            #endregion
+        // Création de la liste Produit en passant par DAOProduit où ils ont été récupérés.
+        public static List<Produit> listeProduit()
+        {
+            List<Produit> laListe = DAOProduit.listeProduit();
+            return laListe;
         }
+
+
+        #endregion
+    }
  }
