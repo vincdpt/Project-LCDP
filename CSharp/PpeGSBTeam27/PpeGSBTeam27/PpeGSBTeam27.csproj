@@ -61,6 +61,7 @@
     <Compile Include="DAOConnection.cs" />
     <Compile Include="DAOFactory.cs" />
     <Compile Include="DAOProduit.cs" />
+    <Compile Include="Clients.cs" />
     <Compile Include="Produit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
