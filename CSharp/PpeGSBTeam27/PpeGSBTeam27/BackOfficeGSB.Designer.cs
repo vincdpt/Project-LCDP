@@ -220,6 +220,13 @@
             this.label35 = new System.Windows.Forms.Label();
             this.txbVisiteursSupprimerChercherNom = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
+            this.VisiteursId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VisiteursNom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VisiteursPrenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VisiteursAdresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VisiteursCP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VisiteursVille = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VisiteursSecteurIntervention = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabGestionGSB.SuspendLayout();
             this.tabProduits.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduits)).BeginInit();
@@ -1649,6 +1656,14 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.VisiteursId,
+            this.VisiteursNom,
+            this.VisiteursPrenom,
+            this.VisiteursAdresse,
+            this.VisiteursCP,
+            this.VisiteursVille,
+            this.VisiteursSecteurIntervention});
             this.dataGridView1.Location = new System.Drawing.Point(448, 25);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(967, 561);
@@ -2070,6 +2085,48 @@
             this.label39.TabIndex = 21;
             this.label39.Text = "Recherche par nom :";
             // 
+            // VisiteursId
+            // 
+            this.VisiteursId.HeaderText = "Identifiant";
+            this.VisiteursId.Name = "VisiteursId";
+            this.VisiteursId.Width = 120;
+            // 
+            // VisiteursNom
+            // 
+            this.VisiteursNom.HeaderText = "Nom";
+            this.VisiteursNom.Name = "VisiteursNom";
+            this.VisiteursNom.Width = 120;
+            // 
+            // VisiteursPrenom
+            // 
+            this.VisiteursPrenom.HeaderText = "Prénom";
+            this.VisiteursPrenom.Name = "VisiteursPrenom";
+            this.VisiteursPrenom.Width = 120;
+            // 
+            // VisiteursAdresse
+            // 
+            this.VisiteursAdresse.HeaderText = "Adresse";
+            this.VisiteursAdresse.Name = "VisiteursAdresse";
+            this.VisiteursAdresse.Width = 120;
+            // 
+            // VisiteursCP
+            // 
+            this.VisiteursCP.HeaderText = "Code Postal";
+            this.VisiteursCP.Name = "VisiteursCP";
+            this.VisiteursCP.Width = 120;
+            // 
+            // VisiteursVille
+            // 
+            this.VisiteursVille.HeaderText = "Ville";
+            this.VisiteursVille.Name = "VisiteursVille";
+            this.VisiteursVille.Width = 120;
+            // 
+            // VisiteursSecteurIntervention
+            // 
+            this.VisiteursSecteurIntervention.HeaderText = "Secteur d\'intervention";
+            this.VisiteursSecteurIntervention.Name = "VisiteursSecteurIntervention";
+            this.VisiteursSecteurIntervention.Width = 120;
+            // 
             // BackOfficeGSB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2313,5 +2370,12 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.TextBox txbVisiteursSupprimerChercherNom;
         private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VisiteursId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VisiteursNom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VisiteursPrenom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VisiteursAdresse;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VisiteursCP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VisiteursVille;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VisiteursSecteurIntervention;
     }
 }
