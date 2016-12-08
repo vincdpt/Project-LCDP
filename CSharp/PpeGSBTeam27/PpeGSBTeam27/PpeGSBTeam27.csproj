@@ -62,11 +62,16 @@
     <Compile Include="DAOFactory.cs" />
     <Compile Include="DAOClients.cs" />
     <Compile Include="DAOProduit.cs" />
+<<<<<<< HEAD
     <Compile Include="Clients.cs" />
     <Compile Include="Medicament.cs" />
+=======
+    <Compile Include="DAOVisiteur.cs" />
+>>>>>>> origin/master
     <Compile Include="Produit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visiteur.cs" />
     <EmbeddedResource Include="BackOfficeGSB.resx">
       <DependentUpon>BackOfficeGSB.cs</DependentUpon>
     </EmbeddedResource>
