@@ -13,7 +13,7 @@ namespace PpeGSBTeam27
     {
         public static SqlConnection cnx = new SqlConnection("Data Source='172.17.21.34';Initial Catalog=BackOffice_GSB;User ID=gsb;Password=gsb-2016");
 
-        public void connection()
+        public void connexion()
         {
             try
             {

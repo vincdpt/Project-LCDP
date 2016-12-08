@@ -60,8 +60,10 @@
     </Compile>
     <Compile Include="DAOConnection.cs" />
     <Compile Include="DAOFactory.cs" />
+    <Compile Include="DAOClients.cs" />
     <Compile Include="DAOProduit.cs" />
     <Compile Include="Clients.cs" />
+    <Compile Include="Medicament.cs" />
     <Compile Include="Produit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

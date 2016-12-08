@@ -57,6 +57,7 @@ namespace PpeGSBTeam27
             }
             return reussiteCreation;
         }
+
         public static Boolean SupprimerClients(Clients cli)
         {
             Boolean reussiteSuppression = false;

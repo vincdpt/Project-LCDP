@@ -10,22 +10,23 @@ namespace PpeGSBTeam27
     {
         #region Attributs
 
-            int id;
-            String nom;
-            String raisonSociale;
-            String adresse;
-            String adresseMail;
-            String telephone;
-            String typeDeProfession;
-            int coefficientNotoriete;
-            int coefficientConfiance;       
+            private int id;
+            private int idSpecialite;
+            private String nom;
+            private String raisonSociale;
+            private String adresse;
+            private String adresseMail;
+            private String telephone;
+            private String typeDeProfession;
+            private int coefficientNotoriete;
+            private int coefficientConfiance;       
 
         #endregion
 
         #region Constructeur
 
         // Constructeur de Produit.
-        public Clients(int unId, string unNom, string uneRaisonSociale, string uneAdresse, string uneAdresseMail, string unTelephone,
+        public Clients(int unId, int unIdSpecialite, string unNom, string uneRaisonSociale, string uneAdresse, string uneAdresseMail, string unTelephone,
                 string unTypeDeProfession, int unCoefficientNotoriete, int unCoefficientConfiance)
             {
                 Id = unId;
@@ -53,6 +54,19 @@ namespace PpeGSBTeam27
             set
             {
                 id = value;
+            }
+        }
+
+        public int IdSpecialite
+        {
+            get
+            {
+                return idSpecialite;
+            }
+
+            set
+            {
+                idSpecialite = value;
             }
         }
 
