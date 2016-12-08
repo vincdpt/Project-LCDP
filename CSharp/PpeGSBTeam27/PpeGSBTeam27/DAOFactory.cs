@@ -13,17 +13,15 @@ namespace PpeGSBTeam27
     {
         public static SqlConnection cnx = new SqlConnection("Data Source='172.17.21.34';Initial Catalog=BackOffice_GSB;User ID=gsb;Password=gsb-2016");
 
-        public void connection()
+        public void connexion()
         {
             try
             {
-                cnx.Open();
-               // MessageBox.Show("\n Connection réussi ;) avoue t'est refait hein !!\n j'avoue moi aussi j'y croyais pas mais bon\n LOURD !!!!!\n On essaye depuis le 29/11/2016 vers 16h t'imagine le temps perdu o_O !!!!! \n ATOZ");
+                cnx.Open();           
             }
             catch (Exception ex)
             {
                 MessageBox.Show("\n Erreur de connection : " + ex.Message);
-                Console.WriteLine(ex);
             }
             
         }

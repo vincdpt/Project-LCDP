@@ -16,7 +16,7 @@ namespace PpeGSBTeam27
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormConnection());
+            Application.Run(new BackOfficeGSB());
         }
     }
 }

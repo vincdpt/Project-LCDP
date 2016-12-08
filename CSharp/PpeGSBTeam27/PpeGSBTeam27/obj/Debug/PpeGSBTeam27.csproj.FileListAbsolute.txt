@@ -28,3 +28,11 @@ Y:\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.BackOffi
 Y:\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.FormConnection.resources
 Y:\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.Properties.Resources.resources
 Y:\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.csproj.GenerateResource.Cache
+C:\Users\DUPONT\Music\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\bin\Debug\PpeGSBTeam27.exe.config
+C:\Users\DUPONT\Music\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.exe
+C:\Users\DUPONT\Music\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.pdb
+C:\Users\DUPONT\Music\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.csprojResolveAssemblyReference.cache
+C:\Users\DUPONT\Music\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.BackOfficeGSB.resources
+C:\Users\DUPONT\Music\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.FormConnection.resources
+C:\Users\DUPONT\Music\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.Properties.Resources.resources
+C:\Users\DUPONT\Music\Project-LCDP\CSharp\PpeGSBTeam27\PpeGSBTeam27\obj\Debug\PpeGSBTeam27.csproj.GenerateResource.Cache

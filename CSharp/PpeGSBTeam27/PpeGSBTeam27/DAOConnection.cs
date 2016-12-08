@@ -10,22 +10,23 @@ namespace PpeGSBTeam27
 {
     class DAOConnection
     {
+        // Vérifie les identifiants entrées sur le formulaire de connexion. Return true si ils sont existants sur la BDD.
         public static Boolean verifLoginMdp()
         {
-            DAOFactory df = new DAOFactory();
-            df.connection();
+            DAOFactory dfco = new DAOFactory();
+            dfco.connexion();
             string resultatRequete = "0";
            
-            string rqt = "SELECT COUNT(*) AS existe FROM dbo.gestionnaire WHERE login = '" + FormConnection.login + "' AND mdp = '" + FormConnection.mdp + "';";
+            string req = "SELECT COUNT(*) AS existe FROM dbo.gestionnaire WHERE login = '" + FormConnection.login + "' AND mdp = '" + FormConnection.mdp + "';";
 
             try
             {
-                SqlDataReader dr = df.execSql(rqt);
+                SqlDataReader dr = dfco.execSql(req);
                 while (dr.Read())
                 {
                     resultatRequete = dr.GetInt32(0).ToString();
                 }
-                df.deconnexion();
+                dfco.deconnexion();
             }
 
             catch (Exception e)
